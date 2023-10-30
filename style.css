@@ -91,6 +91,7 @@ html,body {
     font-size: 1vw;
     font-weight: 400;
     letter-spacing: 0.2vw;
+    text-transform: uppercase;
     color: hsl(231, 7%, 65%);
 }
 
@@ -185,10 +186,171 @@ html,body {
         height: 100%;
         width: 100%;
         position: relative;
+        overflow: hidden;
     }
     
-    #nav #hamburger-id , #nav #idbtn-id {
+    #nav {
         display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 10vw 0vw 5vw 0vw;
+        z-index: 1;
+        position: relative;
+    }
+
+    #nav #hamburger-id{
+        display: flex;
+        margin-right: -20vw;
+    }
+
+    #nav #idbtn-id {
+        display: none;
+    }
+    
+    #nav #logo-id {
+        height: 7vw;
+        width: 7vw;
+        margin-left: -20%;
+    }
+    
+    #nav .nav-header {
+        display: none;
+        gap: 2vw;
+        list-style-type: none;
+        margin-left: 30vw;
+    }
+    
+    
+    #nav .nav-header li {
+        cursor: pointer;
+        font-size: 1vw;
+        font-family: 'Barlow-Condensed',sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    #nav ul li:nth-child(1):hover, #nav ul li:nth-child(2):hover, #nav ul li:nth-child(3):hover {
+        text-decoration: underline;
+        transition: 3.3s;
+    }
+    
+    #nav ul li:nth-child(4){
+        /* color: red; */
+        color: hsl(231, 7%, 65%);
+        margin-left: 4vw;
+    }
+
+
+
+    #content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        overflow: hidden;
+        z-index: 1;
+    }
+    
+    #content img {
+        height: 100%;
+        width: 130vw;
+        margin-top: 8vw;
+        margin-right: -41%;
+        object-fit: contain;
+    }
+
+    #content #text-center {
+        display: block;
+        flex: 1;
+        margin-top: 18vw;
+        margin-left: 7vw;
+        padding: 2vw;
+        /* margin-top: -1vw; */
+    }
+    
+    #content #text-center #heading{
+        font-family: 'Barlow-Condensed',sans-serif;
+        font-size: 3vw;
+        font-weight: 400;
+        letter-spacing: 0.8vw;
+        color: hsl(231, 7%, 65%);
+        text-transform: uppercase;
+    }
+    
+    #content #text-center #new-tag {
+        color: hsl(207, 33%, 95%);
+        padding: 1.1vw 1.8vw 1vw 1.8vw;
+        background-color: hsl(230, 29%, 20%);
+        border-radius: 45vw ;
+        letter-spacing: 0.1vw;
+        font-weight: 700;
+        margin-right: 4vw;
+    }
+
+    #content #text-center h2{
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+        font-family: 'Barlow Condensed',sans-serif;
+        font-weight: 700;
+        font-size: 10vw;
+        text-transform: uppercase;
+        line-height: 10vw;
+        color: hsl(230, 29%, 20%);
+    }
+    
+    #content #text-center p{
+        font-size: 4.5vw;
+        font-family: 'Barlow',sans-serif;
+        font-weight: 700;
+        line-height: 5.5vw;
+        width: 80%;
+        word-spacing: 0.5vw;
+        margin-bottom: 2vw;
+        color: hsl(231, 7%, 65%);
+    }
+
+
+    #content #text-center #btn-text-area #demo {
+        background-color: hsl(0, 100%, 68%);
+        /* padding: 1vw 3vw -11vw 3vw; */
+        color: hsl(207, 33%, 95%);
+        border: none;
+        height: 13vw;
+        width: 37vw;
+        border-radius: 1.5vw;
+        font-size: 3vw;
+        font-family: 'Barlow-Condensed',sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 5vw;
+        margin-right: 5vw;
+        cursor: pointer;
+    }
+    
+    #content #text-center #btn-text-area #demo:hover {
+        filter: brightness(1.2);
+    }
+    
+    #content #text-center #btn-text-area {
+        font-size: 3vw;
+        font-family: 'Barlow',sans-serif;
+        font-weight: 700;
+        letter-spacing: .7vw;
+        text-transform: uppercase;
+        color: hsl(231, 7%, 65%);
+    }
+    
+
+    .zidx {
+        position: absolute;
+        top: -39%;
+        left: 52.5%;
+        height: 100%;
+        width: 70%;
+        z-index: 0;
+        background-color: hsl(207, 33%, 95%);
+        border-radius: 15vw;
     }
 }
 
